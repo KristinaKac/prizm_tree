@@ -33,11 +33,28 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
             "assets": [
+              {
+                "glob": "**/*",
+                "input": "node_modules/@prizm-ui/icons/src/styles/icons-base",
+                "output": "assets/prizm/icons/base"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@prizm-ui/icons/src/styles/icons-full",
+                "output": "assets/prizm/icons/full"
+              },
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "node_modules/@prizm-ui/theme/src/styles/styles.less",
+              "node_modules/@prizm-ui/components/src/styles/styles.less",
+              "node_modules/@prizm-ui/icons/src/styles/styles.less",
+              "node_modules/@prizm-ui/icons/src/styles/icons-base/prizm-base-icons.css",
+              "node_modules/@prizm-ui/icons/src/styles/icons-base/prizm-base-icons-location.css",
+              "node_modules/@prizm-ui/icons/src/styles/icons-full/prizm-full-icons.css",
+              "node_modules/@prizm-ui/icons/src/styles/icons-full/prizm-full-icons-location.css"
             ],
             "scripts": []
           },
